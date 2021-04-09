@@ -1,0 +1,8 @@
+<h1>lab 2</h1>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" [(ngModel)]='username' (input)="OnInput()" >
+  <input class="btn btn-outline-success" type="button" *ngIf="username" value="Login"
+          (click)="OnClick()">
+</div>
+<hr>
+<p> username : {{username}}</p>
